@@ -15,8 +15,8 @@ def nyc_pigeon_organizer(data)
     new_pigeon_data[namae] = {color: [], gender: [], lives: []}
     data.each do |data_type, spec|
       spec.each do |da_spec, names|
-        binding.pry
         if names.include?(namae) 
+          binding.pry
           new_pigeon_data[namae][spec].push(da_spec)
           binding.pry
         end 
