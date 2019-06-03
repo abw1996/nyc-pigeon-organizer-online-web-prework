@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
           pigeon_names.push(name)
         end 
       end
-      binding.pry 
     end 
+      binding.pry 
   end
 end
