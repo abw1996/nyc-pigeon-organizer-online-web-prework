@@ -11,8 +11,16 @@ def nyc_pigeon_organizer(data)
       end
     end 
   end
-  pigeon_names.each do |name|
-    new_pigeon_data[name] = {color: [], gender: [], lives: []}
+  pigeon_names.each do |namae|
+    new_pigeon_data[namae] = {color: [], gender: [], lives: []}
+    data.each do |data_type, spec|
+      spec.each do |da_spec, names|
+        if names.include?(namae) 
+          new_pigeon_data[namae][spec].push(da_spec)
+          binding.pry
+        end 
+      end 
+    end
   end 
   binding.pry
 end
