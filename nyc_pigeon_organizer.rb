@@ -17,7 +17,6 @@ def nyc_pigeon_organizer(data)
       spec.each do |da_spec, names|
         if names.include?(namae)
           new_pigeon_data[namae][data_type].push("#{da_spec}")
-          binding.pry
         end 
       end 
     end
